@@ -5,4 +5,4 @@ Router.route '/', ->
   @render 'home'
 
 Router.route '/signup', ->
-  @render 'login'
+  @render 'app'

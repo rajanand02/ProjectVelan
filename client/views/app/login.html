@@ -1,6 +1,5 @@
-
-<template name="navbar">
-  <nav class="navbar navbar-default navbar-fixed-top">
+<template name="app">
+  <nav class="navbar navbar-default navbar-fixed-top app-navbar">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
@@ -10,9 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand " href="#">
-          <img src="/logo.png" alt="Project Velan" />
-        </a>
+        <a class="navbar-brand page-scroll" href="#page-top">PROJECT VELAN</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,16 +19,16 @@
             <a href="#page-top"></a>
           </li>
           <li>
-            <a class="page-scroll" href="#portfolio">Testimonials</a>
+            <a class="page-scroll" href="#">Docs</a>
           </li>
           <li>
-            <a class="page-scroll" href="#about">Build</a>
+            <a class="page-scroll" href="#">License</a>
           </li>
           <li>
-            <a class="page-scroll" href="#venue">Products</a>
+            <a class="page-scroll" href="#">Products</a>
           </li>
           <li>
-            <a class="page-scroll faq-link" href="#faq">FAQ</a>
+            <a class="page-scroll faq-link" href="#">FAQ</a>
           </li>
           <li>
             <a class="page-scroll" href="#contact">Contact</a>
@@ -42,4 +39,12 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
+  {{#if currentUser}}
+  {{else}}
+  <div class="row login-container">
+   <div class="col-md-3 col-md-offset-5 col-xs-5 col-xs-offset-3 col-sm-12">
+     {{> loginButtons}} 
+   </div> 
+  </div>
+  {{/if}}
 </template>
