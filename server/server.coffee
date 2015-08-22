@@ -1,11 +1,10 @@
 Meteor.methods
   sendEmail: (name, email, phone, message)->
-    check([name, email, message], [String])
     @unblock()
     Email.send({
-      to: email
       form: 'rajanand@hacktivist.in'
+      to: email
       subject: "Project Velan contact us form"
-      text: message + 'name: ' + name + ' phone: '+ phone
+      text: message + " name: " + name + " phone: "+ phone
     })
 

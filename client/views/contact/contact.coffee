@@ -11,6 +11,7 @@ Template.contact.events
           console.log err
         else
           alert('Email sent successfully.')
+          t.$('#contactForm')[0].reset()
       )
 
 

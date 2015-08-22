@@ -12,3 +12,11 @@ twbs:bootstrap
 coffeescript
 fourseven:scss
 email
+accounts-password
+accounts-github
+accounts-facebook
+accounts-twitter
+accounts-google
+accounts-ui
+iron:router
+jamielob:accounts-ui-no-dropdown
