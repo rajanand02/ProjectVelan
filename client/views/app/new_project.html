@@ -1,0 +1,68 @@
+<template name="newProject">
+  <div class=" new-project-outer">
+    <div class="row new-project-container">
+      <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+        <form id="newProject">
+          <h3 class='text-center'>Create New Project</h3>
+
+          <div class="form-group">
+            <label for="name">Project Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Project Name">
+          </div>
+          <div class="form-group">
+            <label for="village">Area</label>
+            <input type="text" class="form-control" id="village" placeholder="Village">
+          </div>
+          <div class="form-group">
+            <label for="district">District</label>
+            <input type="text" class="form-control" id="district" placeholder="District">
+          </div>
+          <div class="form-group">
+            <label for="state">District</label>
+            <input type="text" class="form-control" id="state" placeholder="State">
+          </div>
+          <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 list-projects">
+        <div class="row">
+          {{#each projects}}
+          <div class="col-md-6 col-xs-12 col-sm-6 project-details">
+            <div class="panel panel-default">
+              <div class="panel-heading"> <h4>{{name}}</h4></div>
+              <div class="panel-body">
+                <div class="clearfix"></div>
+                <ul class="list-unstyled">
+                  <li>
+                    <p> <strong>Village:</strong>  {{village}}</p>
+                  </li>
+                  <li>
+                    <p> <strong>District:</strong>  {{district}}</p>
+                  </li>
+                  <li>
+                    <p> <strong>State:</strong>  {{state}}</p>
+                  </li>
+                  <li>
+                    <p> <strong>API ID:</strong>  {{projectId}}</p>
+                  </li>
+                  <li>
+                    <p> <strong>State:</strong>  {{state}}</p>
+                  </li>
+                </ul>
+                <hr>
+                <ul class="list-unstyled">
+                  <li> <a class="btn btn-danger delete" id='delete' href="#">Delete</a></li>
+                </ul>
+              </div>
+            </div> 
+          </div>
+          {{else}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>

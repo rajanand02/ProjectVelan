@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">PROJECT VELAN</a>
+        <a class="navbar-brand page-scroll" href="/">PROJECT VELAN</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,6 +40,7 @@
     <!-- /.container-fluid -->
   </nav>
   {{#if currentUser}}
+    {{> newProject}}
   {{else}}
   <div class="row login-container">
    <div class="col-md-3 col-md-offset-5 col-xs-5 col-xs-offset-3 col-sm-12">
