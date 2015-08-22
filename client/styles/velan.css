@@ -1045,20 +1045,6 @@ body {
   transform: rotate(360deg);
   color: #454444;
 }
-.faq-block{
-  max-height:200px;
-  overflow: hidden;
-  padding-top: 50px;
-}
-.get-answers{
-  margin-bottom:50px;
-}
-.faq-block.active{
-  max-height: 980px;
-  -webkit-transition: all .9s;
-  -moz-transition: all .9s;
-  transition: all .9s;
-}
 .panel-heading{
   background-color: transparent !important;
   border: none !important;

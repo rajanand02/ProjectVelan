@@ -9,3 +9,6 @@ autopublish
 insecure
 fortawesome:fontawesome
 twbs:bootstrap
+coffeescript
+fourseven:scss
+email

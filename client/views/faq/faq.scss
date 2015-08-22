@@ -1,0 +1,15 @@
+
+.faq-block{
+  max-height:200px;
+  overflow: hidden;
+  padding-top: 50px;
+  &.active{
+    max-height: 980px;
+    -webkit-transition: all .9s;
+    -moz-transition: all .9s;
+    transition: all .9s;
+  }
+}
+.get-answers{
+  margin-bottom:50px;
+}
