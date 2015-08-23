@@ -1,6 +1,6 @@
 Template.newProject.helpers
   projects: ->
-    Project.find()
+    Project.find({owner: Meteor.userId()})
 Template.newProject.events
   "submit #newProject":(e,t) ->
     e.preventDefault()

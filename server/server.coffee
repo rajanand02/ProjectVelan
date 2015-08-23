@@ -18,6 +18,8 @@ Meteor.methods
       state: state
       apiKey:apiKey 
       secretKey: secretKey
+      owner: @userId
+      createdAt: Date.now()
 
 
 
