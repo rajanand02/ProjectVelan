@@ -36,14 +36,14 @@ a.active {
 }
 
 a {
-  color: #a01e20;
+  color: #65490e;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #a93436;
+  opacity:0.9;
 }
 
 h1,
@@ -177,14 +177,15 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
   font-family: 'PT Sans', sans-serif;
-  color: #FFFFFF;
+
+   color: #65490e; 
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #FFFFFF;
+  color: #65490e; 
 }
 
 .navbar-default .navbar-collapse {
@@ -192,8 +193,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #a01e20;
-  background-color: #a01e20;
+  /*border-color: #a01e20;*/
+  /*background-color: #a01e20;*/
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -202,7 +203,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #a01e20;
+  background-color: #65490e;
+
 }
 
 .navbar-default .nav li a {
@@ -210,25 +212,25 @@ fieldset[disabled] .btn-xl.active {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #fff;
-}
+  color: #65490e;
+  }
+
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
   outline: 0;
-  color: #a01e20;
 }
 
 .navbar-default .navbar-nav>.active>a {
   border-radius: 0;
   color: #fff;
-  background-color: #a01e20;
+  background-color: #65490e;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   color: #fff;
-  background-color: #a93436;
+  /*background-color: #a93436;*/
 }
 
 @media(min-width:768px) {
@@ -731,9 +733,10 @@ aside.clients img {
 
 section#contact {
   background-color: #222;
-  background-image: url('/map-image.png');
+  background-image: url('/form-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 section#contact .section-heading {
